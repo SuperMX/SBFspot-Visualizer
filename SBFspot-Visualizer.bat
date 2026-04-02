@@ -1,6 +1,7 @@
 SBFspot.exe -scan > address.txt
+pip install -r requirements.txt
 python write-address.py
-SBFspot.exe -nosql -v5 -ad30 -am0 -ae0 -startdate:20010810
+SBFspot.exe -finq -nosql -v5 -ad30 -am0 -ae0 -startdate:20010810
 @echo off
 setlocal enabledelayedexpansion
 
